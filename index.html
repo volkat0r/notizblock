@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notizblock</title>
     <link rel="stylesheet" href="./styles/standard.css"> 
+    <link rel="stylesheet" href="./styles/panel.css">
+    <link rel="stylesheet" href="./styles/buttons.css"> 
     <link rel="stylesheet" href="./style.css">
+    <script src="./scripts/templates.js"></script>
+    <script src="./script.js"></script>
 </head>
-<body>
-    <header></header>
-    <main></main>
+<body onload="renderNotes()">
+    <header>
+        <h1>Notizblock</h1>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section>
+                <input type ="text" id="noteTitle_input" placeholder="new note Title">
+                <input type ="text" id="note_input" placeholder="new note">
+                <button onclick="addNote()">Notiz eintragen</button>
+                <h2>Notizen</h2>
+                <div id="contentRef"></div>
+                <h2>Papierkorb</h2>
+                <div id="contentTrashRef"></div>
+            </section>
+        </div>
+    </main>
     <footer></footer>
 </body>
-<script src="./script.js"></script>
 </html>

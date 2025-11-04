@@ -1,0 +1,13 @@
+div.interaction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    button{
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}    
